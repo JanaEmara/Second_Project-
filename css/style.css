@@ -1,0 +1,130 @@
+body{
+    background-color: #F7ECDE;
+}
+table {
+    width: 100%; 
+    border-spacing: 10px; 
+}
+.btn{
+    font-family: "PT Sans Caption", sans-serif;
+}
+th, td {
+    padding: 10px; 
+    text-align: center;
+    border-bottom-width: 1px;
+    border-color: #ddd;
+}
+
+.container {
+    width: 90%;
+}
+#bookmarkTable {
+    width: 100%; 
+}
+::selection{
+    background-color: #d99c39;
+}
+h1 {
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    font-size: 50px;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden; 
+    width: fit-content;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 0;
+    background-color: #fec260;
+    transition: height 0.3s;
+    z-index: -1;
+}
+
+h1:hover::before {
+    height: 100%; /* Expands the height to cover the text */
+}
+.border-dotted{
+    border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+    margin-top: 30px;
+}
+.header1{
+
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    font-weight: 500;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+label{
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 600;
+    
+}
+.btn-primary{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #d1512d;
+    --bs-btn-border-color: #d1512d;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #bb4120;
+    --bs-btn-hover-border-color: #a03315;
+}
+.btn{
+    --bs-btn-padding-x: 2rem;
+    --bs-btn-padding-y:0.5rem;
+}
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+   color: #000;
+   background-color: white;
+   border-color: #000;
+}
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #d99c39;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+.btn-success {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #9EB23B;
+    --bs-btn-border-color: #9EB23B;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #9EB23B;
+    --bs-btn-hover-border-color: #9EB23B;
+}
+#rulesDialog p{
+    color:#352e28;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-size: 21px;
+}
+dialog {
+    border: none;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    position: relative; /* Needed for positioning the close button */
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    color: red; /* Optional: Change color on hover */
+  }

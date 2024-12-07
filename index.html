@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="shortcut icon" href="images/2899445.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+    <section class="py-5">
+        <div class="d-flex justify-content-center align-items-center flex-column">
+            <h1 class="mb-5">Bookmarker</h1>
+        </div>
+        <div class="container">
+            <div class="border-dotted">                 
+                <h2 class=" header1 text-center mt-4"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
+                <!-- Site Name Input -->
+                <label for="sitename" class="form-label mt-3">
+                    <i class="fa-solid fa-bookmark pe-2"></i> Site Name
+                </label>
+                <input type="text" oninput="ValidateForm(this)" class="form-control" id="sitename" aria-describedby="validationServer03Feedback" required>
+                <p id="sitename-error" class="text-danger d-none">Name must start with a capital letter!</p>
+    
+                <!-- Site URL Input -->
+                <label for="siteurl" class="form-label mt-4">
+                    <i class="fa-solid fa-link pe-2"></i> Site URL
+                </label>
+                <input type="text" oninput="ValidateForm(this)" class="form-control" id="siteurl" aria-describedby="validationServer03Feedback" required>
+                <p id="siteurl-error" class="text-danger d-none">Must write a valid URL that starts with https</p>
+                
+                <!-- Submit Button -->
+                <div class="d-flex justify-content-center align-items-center mb-4">
+                    <button type="button" class="btn btn-primary mt-4" onclick="addsite()">Submit</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Table to display the bookmark list -->
+        <div class="container">
+            <div class="row" id="tablerow">
+                <div class="col-sm-12">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <table class="text-center mt-4 bg-light">
+                            <thead>
+                                <tr>
+                                    <th>Index</th>
+                                    <th>Website Name</th>
+                                    <th>Visit</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody id="bookmarkTable">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    
+    
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
